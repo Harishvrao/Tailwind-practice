@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #232323;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@layer components {
+
+    /* todo solution block starts here */
+    .solutionblock {
+        @apply border-t-2 flex w-[100%] h-[20%] justify-start items-center
+    }
+
+    .solutonanimation {
+        @apply w-[20%] relative 
+    }
+
+    .solutionheading {
+        @apply w-[20%] h-[100%] text-4xl flex justify-start items-center
+    }
+
+    .solutiondiv {
+        @apply w-[40%] h-[100%] flex flex-col justify-center items-start text-base
+    }
+    /* todo solution block ends here */
+
+    
+
+    /* todo video block starts here */
+.videoright{
+    @apply w-[350px] h-[350px] bg-red-500 absolute right-[2px] bottom-[-33px]
+}
+
+.videoblock{
+    @apply flex justify-center items-center relative 
+}
+
+.videoimage{
+    @apply w-[96%] h-[70%] z-[1]
+}
+    /* todo video block ends here */
+
+
+    /* todo the team starts here */
+.teammiddle{
+    @apply w-[40%] h-[100%]  flex flex-col justify-center
+}
+
+.teammiddle ul{
+    @apply flex flex-col gap-3
+}
+
+.teammiddle ul li{
+    @apply text-base
+}
+
+.teamright{
+    @apply w-[10%] h-[100%]  flex flex-col justify-center items-end
+}
+
+.teamright ul{
+    @apply text-xl font-medium flex flex-col gap-5
+}
+    /* todo the team ends here */
+
+    /* todo message starts here */
+
+.message{
+    @apply flex justify-center items-center h-[30vh] w-[100%]
+}
+
+.news{
+    @apply w-[100%] h-[70%] flex justify-between items-center
+}
+
+.news figure{
+    @apply w-[25%] h-[30%] shadow-gray-600 shadow border-none
+}
+
+.newsbottom{
+    @apply w-[100%] h-[10%] flex justify-between border-b-2
+}
+
+.newsbottom h5{
+    @apply text-lg
+}
+
+.newsbottom p{
+    @apply text-lg
+}
+
+.contact{
+    @apply w-[33%] h-[100%]  p-5 
+}
+
+.contact div{
+    @apply w-[80px] h-[80px] border border-slate-500 mb-5 flex justify-center items-center
+}
+
+.contact h1{
+    @apply text-4xl mb-5
+}
+
+.contact h6{
+    @apply underline mb-5 
+}
+
+.contact input{
+    @apply w-[100%] border p-[10px] mb-5
+}
+
+.contact button{
+    @apply w-[100%] border p-[10px] bg-black text-white mb-5
+}
+
+    /* todo message ends here */
+}
+
+.videoleft {
+    writing-mode: vertical-lr;
+    position: absolute;
+    width:10%;
+    height: 20%;
+    color: black;
+    z-index: 2;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    top: 0px;
+    left: 1px;
+}
+
+.navMenu {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 100%;
+    position: absolute;
+    left: 10%;
+}
+
+.navMenu:hover {
+    background-color: rgba(0, 0, 255, 0.521);
+}
+
+.relative:hover {
+    transition: 3s ease all;
+}
+
+
+#sliderBlock {
+    width: 100%;
+    height: 87vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("./Images/slider.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product {
+    writing-mode: vertical-lr;
+}
